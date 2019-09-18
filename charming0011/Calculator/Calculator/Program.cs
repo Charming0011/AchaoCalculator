@@ -11,7 +11,7 @@ namespace ConsoleApplication1
 {
 
 
-    class Program
+    public  class Program
     {
         public static char[] op = { '+', '-', '*', '/' };//将运算符写入一个静态数组
         public static string mkformula()
@@ -74,7 +74,7 @@ namespace ConsoleApplication1
         //写入文件里面
         public static void File(string formula)
         {
-            StreamWriter sw = new StreamWriter("F:\\Work2\\AchaoCalculator\\charming0011\\Calculator\\subject.txt", false, Encoding.UTF8);
+            StreamWriter sw = new StreamWriter("F:\\Work2\\AchaoCalculator\\charming0011\\subject.txt", false, Encoding.UTF8);
             sw.Write(formula);
             sw.Close();
 
@@ -98,7 +98,7 @@ namespace ConsoleApplication1
         }
 
 
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             process();
             Console.Read();
